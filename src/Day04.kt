@@ -9,7 +9,7 @@ data class ScratchInfo(
 )
 
 fun main() {
-    val whiteSpaceRegex = Regex("\\s+")
+
 
     fun findDuplicateCount(first: List<Int>, second: List<Int>): Int {
         var counter = 0
