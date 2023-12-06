@@ -24,3 +24,10 @@ fun String.md5() = BigInteger(1, MessageDigest.getInstance("MD5").digest(toByteA
 fun Any?.println() = println(this)
 
 val whiteSpaceRegex = Regex("\\s+")
+
+/**
+ * Takes a string of numbers and splits it in a List of Integers.
+ */
+fun splitIntString(input: String, separator: Regex = whiteSpaceRegex): List<Int> {
+    return input.trim().split(separator).map { it.trim().toInt() }
+}
